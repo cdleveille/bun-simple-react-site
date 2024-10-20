@@ -1,0 +1,21 @@
+{
+  "name": "bun-simple-site",
+  "module": "./src/index.ts",
+  "scripts": {
+    "dev": "concurrently --prefix \"[{name}]\" --names \"server,client\" -c \"bgBlue.bold,bgGreen.bold\" \"bun --watch ./src/server/index.ts\" \"reload -d ./public -p 3000\""
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "concurrently": "^9.0.1",
+    "prettier": "^3.3.3",
+    "reload": "^3.3.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
